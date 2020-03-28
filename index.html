@@ -38,7 +38,7 @@
                             <div class="modal-body mb-1">
                                 <form action="" name="regsite" id="regsite" method="POST">
                                     <div class="md-form form-sm mb-5">
-                                        <label data-error="wrong" data-success="right" for="phone">Số Điện Thoại</label>
+                                        <label data-error="wrong" data-success="right" for="phone">Số Điện Thoại / Tên tài khoản</label>
 
                                         <input type="number" id="modalLRInput10" class="form-control form-control-sm validate" name="phone" placeholder="+84123456789">
 
@@ -62,12 +62,12 @@
                                     <div class="md-form form-sm ">
                                         <div class="form-row">
                                             <div class="form-group col-md-6 col-xl-6">
-                                                <label data-error="wrong" data-success="right" for="rgPhone">Số Điện Thoại</label>
-                                                <input type="number" id="modalLRInput12" class="form-control form-control-sm validate" name="rgPhone" placeholder="abc@domain.com">
+                                                <label data-error="wrong" data-success="right" for="rgPhone">Số Điện Thoại / Tên tài khảon</label>
+                                                <input type="number" id="modalLRInput12" class="form-control form-control-sm validate" name="rgPhone" placeholder="+84123456789/NguyenVanA">
                                             </div>
                                             <div class="form-group col-md-6 col-xl-6">
                                                 <label data-error="wrong" data-success="right" for="rgPhone">Email</label>
-                                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" name="rgPhone" placeholder="+84123456789">
+                                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" name="rgPhone" placeholder="abc@domain.com">
                                             </div>
                                         </div>
 
@@ -77,34 +77,32 @@
 
                                         <input type="rgPassword" id="modalLRInput13" class="form-control form-control-sm validate" name="rgPassword">
                                     </div>
-                                    <div class="md-form form-sm mb-4">
+                                    <div class="md-form form-sm mb-2">
                                         <label data-error="wrong" data-success="right" for="rgRpassword">Nhập lại mật khẩu</label>
                                         <input type="rgRpassword" id="modalLRInput14" class="form-control form-control-sm validate" name="rgRpassword">
                                     </div>
                                     <p class="my-2">Bệnh Lý</p>
-                                    <select name="states" id="benhly" class="form-control" multiple="multiple" style="display: none;" name="benhly">
+                                    <select name="benhly" id="benhly" class="form-control" multiple="multiple" style="display: none;" name="benhly">
                                     <option value="AL">Tiểu đường</option>
                                     <option value="AK">Cao huyết áp</option>
                                     <option value="AZ">Trĩ</option>
                                     <option value="AR">Béo phì</option>
                                     <option selected value="CA">gầy</option>                 
                                   </select>
+                                    <p class="my-2">Dị ứng</p>
+                                    <select name="diung" id="diung" class="form-control" multiple="multiple" style="display: none;" name="benhly">
+                                  <option value="AL">Hoa đào</option>
+                                  <option value="AK">Hoa mai</option>
+                                  <option value="AZ">Hoa cúc</option>
+                                  <option value="AR">hoa hồng</option>
+                                  <option selected value="CA">gầy</option>                 
+                                </select>
                                     <p class="my-2">Thành viên trong gia đình</p>
-                                    <div class="row pt-2">
-                                        <div class=" col-4 col-sm-4 col-md-4 col-xl-4 col-lg-4 col-xs-4 ">
-                                            <p>Trẻ em</p>
-                                        </div>
-                                        <div class=" col-4 col-sm-4 col-md-4 col-xl-4 col-lg-4 col-xs-4 ">
-                                            <p>Người già</p>
-                                        </div>
-                                        <div class=" col-4 col-sm-4 col-md-4 col-xl-4 col-lg-4 col-xs-4 ">
-                                            <p>Người già</p>
-                                        </div>
-                                    </div>
+
                                     <div class="row">
                                         <div class=" col-4 col-sm-4 col-md-4 col-xl-4 col-lg-4 col-xs-4 ">
-                                            <div class="input-group mb-3 text-center">
-                                                <div class="input-group mb-3">
+                                            <div class="input-group  text-center">
+                                                <div class="input-group ">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text btn btn-warning tru">-&nbsp;</span>
                                                     </div>
@@ -115,32 +113,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class=" col-4 col-sm-4 col-md-4 col-xl-4 col-lg-4 col-xs-4 ">
-                                            <div class="input-group  text-center">
-                                                <div class="input-group ">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text btn btn-warning tru">-&nbsp;</span>
-                                                    </div>
-                                                    <input type="text" class="form-control numTV text-center" value="0" name="nguoilon">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text btn btn-warning cong">+</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 col-sm-4 col-md-4 col-xl-4 col-lg-4 col-xs-4  ">
-                                            <div class="input-group mb-3 text-center">
-                                                <div class="input-group ">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text btn btn-warning tru">-&nbsp;</span>
-                                                    </div>
-                                                    <input type="text" class="form-control  numTV text-center" value="0" name="nguoigia">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text btn btn-warning cong">+</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+
+
                                     </div>
                             </div>
                             <div class="text-center form-sm ">
@@ -165,7 +139,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="/js/BsMultiSelect.js"></script>
+    <script src="js/BsMultiSelect.js"></script>
     <script>
         var formReg = document.getElementById('tabreg');
         formReg.onclick = () => {
